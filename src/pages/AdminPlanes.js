@@ -22,12 +22,10 @@ function AdminPlanes() {
                 <section className="content-header">
                     <div className="container-fluid">
                         <div className="row mb-2">
-                            <div className="col-sm-6"><h1>Gestión de Planes</h1></div>
-                            <div className="col-sm-6 text-right">
-                                <button className="btn btn-success" onClick={() => navigate('/admin/planes/crear')}>
-                                    <i className="fas fa-plus"></i> Nuevo Plan
-                                </button>
+                            <div className="col-sm-12">
+                                <h1>Gestión de Planes</h1>
                             </div>
+                            {/* AQUÍ BORRAMOS EL BOTÓN DE CREAR */}
                         </div>
                     </div>
                 </section>

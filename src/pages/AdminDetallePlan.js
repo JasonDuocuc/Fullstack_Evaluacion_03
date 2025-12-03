@@ -11,7 +11,7 @@ function AdminDetallePlan() {
     const [plan, setPlan] = useState(null);
 
     useEffect(() => {
-        // Obtenemos la lista completa y buscamos el ID
+ 
         axios.get('http://localhost:3001/planes')
             .then((response) => {
                 const listaPlanes = response.data;
@@ -29,7 +29,7 @@ function AdminDetallePlan() {
             });
     }, [id, navigate]);
 
-    // Lógica para elegir la imagen según el ID
+
     const determinarImagen = () => {
         if (!plan) return null;
         switch (parseInt(plan.id)) {
@@ -70,7 +70,7 @@ function AdminDetallePlan() {
 
                 <section className="content">
                     <div className="row">
-                        {/* COLUMNA IZQUIERDA: Información */}
+                  
                         <div className="col-md-8">
                             <div className="card card-success card-outline">
                                 <div className="card-header">
@@ -95,10 +95,10 @@ function AdminDetallePlan() {
                             </div>
                         </div>
 
-                        {/* COLUMNA DERECHA: Imagen, Precio y Volver */}
+                        
                         <div className="col-md-4">
                             
-                            {/* Imagen */}
+                 
                             {imagenActual && (
                                 <div className="card mb-3">
                                     <div className="card-body text-center p-2">
@@ -113,7 +113,7 @@ function AdminDetallePlan() {
                                 </div>
                             )}
 
-                            {/* Precio */}
+                      
                             <div className="small-box bg-gradient-success">
                                 <div className="inner">
                                     <h3>{plan.precio}</h3>
@@ -124,7 +124,7 @@ function AdminDetallePlan() {
                                 </div>
                             </div>
 
-                            {/* Acciones (Solo Volver) */}
+                       
                             <div className="card">
                                 <div className="card-header bg-gray-light">
                                     <h3 className="card-title">Navegación</h3>

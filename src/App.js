@@ -10,7 +10,7 @@ import AdminCrearServicio from './pages/AdminDetalleServicio';
 import AdminDetalleServicio from './pages/AdminDetalleServicio';
 
 import AdminPlanes from './pages/AdminPlanes';
-import AdminCrearPlan from './pages/AdminCrearPlan';
+
 import AdminDetallePlan from './pages/AdminDetallePlan';
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
         <Route path='/admin/servicios/crear' element={<AdminCrearServicio />} />
 
         <Route path='/admin/planes' element={<AdminPlanes />} />
-        <Route path='/admin/planes/crear' element={<AdminCrearPlan />} />
+
         <Route path='/admin/planes/detalle/:id' element={<AdminDetallePlan />} />
       </Routes>
     </Router>    

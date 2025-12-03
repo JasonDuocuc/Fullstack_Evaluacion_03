@@ -1,7 +1,7 @@
 import React from 'react';
-import '../App.css'; // Sube un nivel (a src) para buscar App.css
+import '../App.css';
 
-// IMPORTANTE: Un solo punto (.) porque la carpeta components está AQUÍ MISMO (dentro de pages)
+
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import Hero from '../components/Hero';

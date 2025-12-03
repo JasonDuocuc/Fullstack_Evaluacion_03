@@ -66,7 +66,7 @@ function AdminDetalleServicio() {
 
                         <div className="card-body">
                             <div className="row">
-                                {/* COLUMNA IZQUIERDA: Datos principales */}
+                             
                                 <div className="col-12 col-md-8">
                                     <h3 className="text-primary"><i className="fas fa-solar-panel"></i> {servicio.titulo}</h3>
                                     <p className="text-muted mt-3">
@@ -93,7 +93,7 @@ function AdminDetalleServicio() {
                                     </div>
                                 </div>
 
-                                {/* COLUMNA DERECHA: Solo volver */}
+                           
                                 <div className="col-12 col-md-4 border-left">
                                     <h5 className="text-muted">Estado</h5>
                                     <div className="callout callout-info">
