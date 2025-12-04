@@ -72,7 +72,7 @@ function AdminServicios() {
                                             </td>
                                             <td>{servicio.descripcion}</td>
                                             <td className="project-actions text-center">
-                                                {/* BOTÓN VER DETALLE (MODIFICADO) */}
+                                      
                                                 <button 
                                                     className="btn btn-info btn-sm mx-1"
                                                     onClick={() => verDetalle(servicio.id)}
@@ -81,7 +81,7 @@ function AdminServicios() {
                                                     <i className="fas fa-eye"></i>
                                                 </button>
 
-                                                {/* Botón Eliminar (Visual) */}
+                                      
                                                 <button className="btn btn-danger btn-sm mx-1">
                                                     <i className="fas fa-trash"></i>
                                                 </button>

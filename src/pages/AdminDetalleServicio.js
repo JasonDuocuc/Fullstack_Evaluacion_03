@@ -11,11 +11,11 @@ function AdminDetalleServicio() {
     const [servicio, setServicio] = useState(null);
 
     useEffect(() => {
-        // Usamos el mismo truco: Traer todos y buscar el ID
+ 
         axios.get('http://localhost:3001/servicios')
             .then((response) => {
                 const listaServicios = response.data;
-                // Nota: usamos == para que coincida aunque uno sea string y el otro numero
+           
                 const servicioEncontrado = listaServicios.find(s => s.id == id);
                 
                 if (servicioEncontrado) {

@@ -32,7 +32,7 @@ function Servicios() {
 
   return (
     <section id="servicios" className="py-5" style={{
-      // EL MISMO FONDO GRIS INDUSTRIAL
+
       backgroundColor: '#a0a0a0ff',
       padding: '50px 0',
       borderTop: '3px solid #838181ff',
@@ -66,7 +66,7 @@ function Servicios() {
           <div className="row row-cols-1 row-cols-md-4 g-4">
             {listaServicios.map((servicio, index) => (
               <div className="col" key={index}>
-                {/* TARJETA BLANCA CON EFECTO HOVER */}
+
                 <div 
                     className="card h-100 shadow border-0"
                     style={{ transition: 'transform 0.3s', cursor: 'pointer' }}
@@ -74,7 +74,7 @@ function Servicios() {
                     onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                 >
                   <div className="card-body text-center p-4">
-                    {/* ICONO AMARILLO */}
+
                     <div className="mb-4 d-inline-block p-3 rounded-circle bg-light shadow-sm">
                         <i className={`${obtenerIcono(servicio.id)} fa-3x text-warning`}></i>
                     </div>

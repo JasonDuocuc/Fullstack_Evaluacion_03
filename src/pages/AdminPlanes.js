@@ -25,7 +25,7 @@ function AdminPlanes() {
                             <div className="col-sm-12">
                                 <h1>Gestión de Planes</h1>
                             </div>
-                            {/* AQUÍ BORRAMOS EL BOTÓN DE CREAR */}
+
                         </div>
                     </div>
                 </section>
